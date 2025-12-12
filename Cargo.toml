@@ -1,0 +1,19 @@
+[package]
+name = "stellar-class"
+version = "0.1.0"
+edition = "2024"
+authors = ["Fralonra <zoronlivingstonatgmail.com>"]
+description = "Morgan-Keenan (MK) Spectral Classification representations"
+homepage = "https://github.com/fralonra/stellar-class"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/fralonra/stellar-class"
+exclude = [".gitignore", ".github/*"]
+
+[dependencies]
+serde = { version = "1.0.228", optional = true, features = ["serde_derive"] }
+thiserror = "2.0.17"
+
+[features]
+serde = ["dep:serde"]
+default = []
